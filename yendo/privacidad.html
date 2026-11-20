@@ -54,6 +54,16 @@
 </ul>
 <p>Si pagas con medios electrónicos, los datos de tu tarjeta los procesa directamente la pasarela de pagos autorizada. BYRA no almacena números completos de tarjeta.</p>
 
+<h3 id="datos-faciales">Datos faciales (verificación de identidad)</h3>
+<p>Cuando la verificación de identidad está activada, la app de conductores confirma que quien usa la cuenta es el conductor registrado. Para eso trata datos biométricos, que la ley colombiana considera <strong>datos sensibles</strong>. Por eso te pedimos tu autorización expresa dentro de la app antes de hacer la verificación. No estás obligado a darla, pero sin ella no podremos confirmar tu identidad por este medio y te ofreceremos otra forma de verificación cuando esté disponible.</p>
+<ul>
+<li><strong>Prueba de vida:</strong> primero se comprueba que hay una persona real frente a la cámara. Las imágenes de tu rostro y, en los celulares compatibles, los datos de profundidad se procesan solo en tu dispositivo. Los datos de profundidad nunca se guardan ni se envían, y se descartan al terminar la prueba.</li>
+<li><strong>Comparación:</strong> luego se envía de forma segura una selfie a Ondemand Apps OU, el proveedor que opera la plataforma de la app y actúa como encargado del tratamiento de BYRA. Ondemand Apps OU la compara con tu fotografía de referencia (la foto de conductor que registraste) usando el servicio AWS Rekognition de Amazon Web Services como subencargado.</li>
+<li><strong>Cuánto tiempo los guardamos:</strong> nunca de forma indefinida. La selfie se borra automáticamente apenas termina la verificación, o en cuanto la sesión se interrumpe después de tomarla. La fotografía de referencia se guarda mientras tu cuenta de conductor esté activa, porque las verificaciones siguientes necesitan una imagen con la cual comparar, y se borra dentro de los 30 días siguientes al cierre de la cuenta. De cada verificación solo guardamos el resultado (aprobada o no aprobada) y su fecha, que no contienen datos faciales.</li>
+<li><strong>Con quién se comparten:</strong> solo con los dos proveedores mencionados y únicamente para hacer la verificación. AWS procesa las imágenes de forma transitoria, no las conserva al terminar la consulta y no las usa para entrenar ni mejorar sus servicios.</li>
+<li><strong>Lo que nunca hacemos:</strong> usar tus datos faciales para publicidad, mercadeo, perfilamiento o análisis, ni venderlos.</li>
+</ul>
+
 <h2>3. Para qué usamos tus datos</h2>
 <ul>
 <li>Prestar el servicio: crear tu cuenta, conectar pasajeros con conductores, calcular tarifas, mostrar el recorrido y procesar pagos.</li>
@@ -80,7 +90,7 @@
 <li><strong>Ubicación:</strong> necesaria para pedir y seguir viajes. En la app de conductores también se usa en segundo plano mientras estás conectado.</li>
 <li><strong>Notificaciones:</strong> para avisarte cuando llega tu conductor o recibes un viaje.</li>
 <li><strong>Teléfono y contactos:</strong> solo si decides llamar desde la app o elegir contactos de confianza.</li>
-<li><strong>Cámara y fotos:</strong> solo si decides subir una foto de perfil o, en el caso de conductores, tus documentos.</li>
+<li><strong>Cámara y fotos:</strong> solo si decides subir una foto de perfil o, en el caso de conductores, tus documentos y la selfie de la <a href="#datos-faciales">verificación de identidad</a>.</li>
 </ul>
 <p>Puedes desactivar estos permisos en la configuración de tu celular, aunque algunas funciones dejarán de estar disponibles.</p>
 
@@ -105,7 +115,7 @@
 <p>Puedes eliminar tu cuenta desde la app, en tu perfil, o escribiendo a <span class="mail">soporte@byragroup.com</span> con el asunto "Eliminar mi cuenta de Yendo" desde el correo o celular registrado. Eliminamos o anonimizamos tus datos en un máximo de 30 días. Conservamos solo lo que la ley nos obliga a guardar, como registros contables y de facturación, o lo necesario para atender una reclamación o investigación en curso, y por el tiempo que esa obligación dure.</p>
 
 <h2>9. Cuánto tiempo guardamos tus datos</h2>
-<p>Mientras tengas una cuenta activa y, después, por el tiempo necesario para cumplir las finalidades de esta política y las obligaciones legales, contables o tributarias que apliquen.</p>
+<p>Mientras tengas una cuenta activa y, después, por el tiempo necesario para cumplir las finalidades de esta política y las obligaciones legales, contables o tributarias que apliquen. Los datos faciales tienen plazos propios, más cortos, explicados en la sección <a href="#datos-faciales">Datos faciales</a>.</p>
 
 <h2>10. Seguridad</h2>
 <p>Usamos medidas técnicas, humanas y administrativas razonables para proteger tus datos contra pérdida, acceso no autorizado o uso indebido, como conexiones cifradas, accesos restringidos al personal autorizado y acuerdos de confidencialidad con nuestros proveedores.</p>
